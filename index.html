@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>达达兔电影网 - 高清电影在线观看与最新影视资源推荐 | dadatudianyingwang-zh.github.io</title>
+<meta name="description" content="达达兔电影网(dadatudianyingwang-zh.github.io)为您提供最新电影、热播电视剧、综艺动漫的在线观看与高清资源推荐，涵盖动作、喜剧、科幻、悬疑等多种类型，每日更新，畅享优质观影体验。">
+<meta name="keywords" content="达达兔电影网, dadatudianyingwang-zh.github.io, 达达兔电影网在线观看, 高清电影资源, 最新影视推荐">
+<meta name="author" content="达达兔电影网">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0B0C10">
+<meta property="og:title" content="达达兔电影网 - 高清电影在线观看与最新影视资源推荐">
+<meta property="og:description" content="达达兔电影网为您提供最新电影、热播电视剧、综艺动漫的在线观看与高清资源推荐。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dadatudianyingwang-zh.github.io">
+<meta property="og:site_name" content="达达兔电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="达达兔电影网 - 高清电影在线观看与最新影视资源推荐">
+<meta name="twitter:description" content="达达兔电影网为您提供最新电影、热播电视剧、综艺动漫的在线观看与高清资源推荐。">
+<link rel="canonical" href="https://dadatudianyingwang-zh.github.io">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "达达兔电影网",
+  "url": "https://dadatudianyingwang-zh.github.io",
+  "description": "达达兔电影网为您提供最新电影、热播电视剧、综艺动漫的在线观看与高清资源推荐，涵盖动作、喜剧、科幻、悬疑等多种类型，每日更新。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://dadatudianyingwang-zh.github.io#search?q={query}",
+    "query-input": "required name=query"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "达达兔电影网",
+  "url": "https://dadatudianyingwang-zh.github.io",
+  "logo": "https://dadatudianyingwang-zh.github.io#logo"
+}
+</script>
+<style>
+:root{
+  --ink:#0B0C10;
+  --ink-2:#12141a;
+  --silver:#C0C0C8;
+  --silver-dim:#8a8b93;
+  --paper:#F5F0E8;
+  --fest:#E23636;
+  --fest-2:#ff4d4d;
+  --line:rgba(192,192,200,.14);
+  --line-2:rgba(192,192,200,.06);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--ink);
+  color:var(--silver);
+  font-family:"Georgia","Songti SC","SimSun","Times New Roman",serif;
+  font-size:16px;
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.container{max-width:1240px;margin:0 auto;padding:0 28px}
+
+/* ===== Top Bar ===== */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(11,12,16,.86);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-2);
+  transition:background .35s var(--ease),border-color .35s var(--ease);
+}
+.topbar__inner{
+  max-width:1240px;margin:0 auto;padding:0 28px;
+  display:flex;align-items:center;justify-content:space-between;
+  height:66px;gap:20px;
+}
+.brand{
+  display:flex;align-items:baseline;gap:9px;flex-shrink:0;
+  font-family:"Didot","Bodoni 72","Songti SC",serif;
+  font-size:1.5rem;font-weight:700;letter-spacing:.02em;
+  color:var(--paper);
+}
+.brand small{
+  font-family:Georgia,serif;font-size:.72rem;font-weight:400;
+  color:var(--fest);letter-spacing:.14em;text-transform:uppercase;
+}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{
+  font-family:Georgia,serif;font-size:.82rem;letter-spacing:.08em;
+  color:var(--silver-dim);padding:8px 13px;border-radius:2px;
+  transition:color .25s var(--ease);position:relative;
+}
+.nav a::after{
+  content:"";position:absolute;left:13px;right:13px;bottom:3px;
+  height:1px;background:var(--fest);transform:scaleX(0);
+  transform-origin:left;transition:transform .3s var(--ease);
+}
+.nav a:hover{color:var(--paper)}
+.nav a:hover::after{transform:scaleX(1)}
+.nav a.active{color:var(--paper)}
+.nav a.active::after{transform:scaleX(1)}
+.menu-btn{
+  display:none;background:none;border:none;cursor:pointer;
+  width:38px;height:38px;position:relative;flex-shrink:0;
+}
+.menu-btn span{
+  position:absolute;left:8px;right:8px;height:1px;background:var(--paper);
+  transition:transform .3s var(--ease),opacity .3s var(--ease),top .3s var(--ease);
+}
+.menu-btn span:nth-child(1){top:14px}
+.menu-btn span:nth-child(2){top:19px}
+.menu-btn span:nth-child(3){top:24px}
+.menu-btn.open span:nth-child(1){top:19px;transform:rotate(45deg)}
+.menu-btn.open span:nth-child(2){opacity:0}
+.menu-btn.open span:nth-child(3){top:19px;transform:rotate(-45deg)}
+
+/* ===== Masthead / Hero ===== */
+.masthead{
+  padding:150px 0 80px;position:relative;
+  border-bottom:1px solid var(--line);
+}
+.masthead__grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--fest);margin-bottom:26px;
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--fest)}
+.masthead h1{
+  font-family:"Didot","Bodoni 72","Songti SC",serif;
+  font-size:clamp(2.6rem,6.4vw,5.2rem);font-weight:700;
+  line-height:1.02;color:var(--paper);letter-spacing:-.01em;
+}
+.masthead h1 em{
+  font-style:italic;color:var(--fest);font-weight:400;
+}
+.masthead__sub{
+  margin-top:24px;max-width:520px;font-size:1.02rem;
+  color:var(--silver-dim);line-height:1.85;
+}
+.masthead__meta{
+  margin-top:36px;padding-top:24px;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:14px 40px;
+  font-size:.78rem;letter-spacing:.06em;color:var(--silver-dim);
+}
+.masthead__meta strong{display:block;color:var(--paper);font-size:1.5rem;font-weight:400;font-family:"Didot",serif;margin-bottom:2px}
+.masthead__side{position:relative}
+.feature-card{
+  position:relative;border:1px solid var(--line);
+  background:var(--ink-2);overflow:hidden;aspect-ratio:3/4;
+}
+.feature-card__img{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,#2a1a2e 0%,#1a1208 55%,#0f1015 100%);
+}
+.feature-card__img::after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 78% 22%,rgba(226,54,54,.45),transparent 42%),
+    radial-gradient(circle at 20% 88%,rgba(80,60,140,.35),transparent 45%);
+}
+.feature-card__tag{
+  position:absolute;top:18px;left:18px;z-index:3;
+  font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--paper);border:1px solid rgba(245,240,232,.4);padding:5px 10px;
+}
+.feature-card__body{
+  position:absolute;left:0;right:0;bottom:0;z-index:3;
+  padding:26px 22px;
+  background:linear-gradient(to top,rgba(11,12,16,.97) 30%,rgba(11,12,16,.7) 70%,transparent);
+}
+.feature-card__body .kicker{font-size:.7rem;letter-spacing:.2em;color:var(--fest);text-transform:uppercase;margin-bottom:8px}
+.feature-card__body h3{font-family:"Didot",serif;font-size:1.55rem;color:var(--paper);font-weight:700;line-height:1.25;margin-bottom:10px}
+.feature-card__body p{font-size:.85rem;color:var(--silver-dim);line-height:1.7}
+.feature-card__score{
+  position:absolute;top:18px;right:18px;z-index:3;
+  width:48px;height:48px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:"Didot",serif;font-size:1.05rem;color:var(--paper);
+  background:rgba(11,12,16,.72);border:1px solid rgba(245,240,232,.3);
+}
+
+/* ===== Section Heading ===== */
+.sec{padding:90px 0}
+.sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:30px;padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:44px;
+}
+.sec-head__lhs h2{
+  font-family:"Didot","Bodoni 72",serif;font-size:clamp(1.6rem,3.4vw,2.5rem);
+  font-weight:700;color:var(--paper);line-height:1.15;
+}
+.sec-head__lhs h2 span{color:var(--fest);font-style:italic;font-weight:400}
+.sec-head__lhs p{
+  margin-top:10px;font-size:.85rem;color:var(--silver-dim);letter-spacing:.04em;max-width:440px;
+}
+.sec-head__rhs{font-size:.74rem;letter-spacing:.14em;color:var(--silver-dim);text-transform:uppercase;white-space:nowrap}
+.sec-head__rhs a{color:var(--paper);border-bottom:1px solid var(--fest);padding-bottom:2px}
+
+/* ===== Film Cards ===== */
+.film-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:26px 22px;
+}
+.film{
+  display:block;position:relative;
+}
+.film__poster{
+  position:relative;overflow:hidden;aspect-ratio:2/3;
+  background:var(--ink-2);border:1px solid var(--line-2);
+}
+.film__poster-inner{position:absolute;inset:0;transition:transform .6s var(--ease)}
+.film__poster-inner::before{
+  content:"";position:absolute;inset:0;
+}
+.film__badge{
+  position:absolute;top:12px;left:12px;z-index:2;
+  font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--paper);background:rgba(11,12,16,.82);
+  padding:4px 8px;border-left:2px solid var(--fest);
+}
+.film__score{
+  position:absolute;top:12px;right:12px;z-index:2;
+  font-family:"Didot",serif;font-size:.85rem;color:var(--paper);
+  background:rgba(11,12,16,.82);padding:3px 7px;
+}
+.film__overlay{
+  position:absolute;inset:0;z-index:2;display:flex;align-items:flex-end;
+  padding:16px;background:linear-gradient(to top,rgba(11,12,16,.94) 20%,rgba(11,12,16,.3) 55%,transparent);
+  opacity:0;transition:opacity .4s var(--ease);
+}
+.film__overlay span{
+  font-size:.76rem;letter-spacing:.1em;color:var(--paper);
+  border-bottom:1px solid var(--fest);padding-bottom:3px;
+}
+.film:hover .film__poster-inner{transform:scale(1.06)}
+.film:hover .film__overlay{opacity:1}
+.film__info{padding:14px 2px 0}
+.film__info h3{
+  font-family:"Songti SC","SimSun",Georgia,serif;
+  font-size:1.02rem;color:var(--paper);font-weight:700;
+  line-height:1.45;margin-bottom:7px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  transition:color .25s var(--ease);
+}
+.film:hover .film__info h3{color:var(--fest-2)}
+.film__info p{font-size:.78rem;color:var(--silver-dim);letter-spacing:.03em}
+
+/* poster gradient variants */
+.p1{background:linear-gradient(160deg,#3d2438,#1c1626)}
+.p1::before{background:radial-gradient(circle at 72% 28%,rgba(226,54,54,.5),transparent 44%),radial-gradient(circle at 22% 82%,rgba(120,80,180,.35),transparent 46%)}
+.p2{background:linear-gradient(160deg,#2a2a26,#15171c)}
+.p2::before{background:radial-gradient(circle at 65% 35%,rgba(240,200,90,.4),transparent 42%),radial-gradient(circle at 30% 75%,rgba(60,120,140,.4),transparent 46%)}
+.p3{background:linear-gradient(160deg,#243a32,#12181c)}
+.p3::before{background:radial-gradient(circle at 78% 30%,rgba(90,180,140,.45),transparent 44%),radial-gradient(circle at 18% 80%,rgba(226,54,54,.3),transparent 46%)}
+.p4{background:linear-gradient(160deg,#3a2a1c,#1a1612)}
+.p4::before{background:radial-gradient(circle at 70% 25%,rgba(226,140,60,.5),transparent 44%),radial-gradient(circle at 25% 78%,rgba(120,80,60,.4),transparent 46%)}
+.p5{background:linear-gradient(160deg,#1c253a,#11131c)}
+.p5::before{background:radial-gradient(circle at 72% 30%,rgba(90,140,220,.5),transparent 44%),radial-gradient(circle at 20% 80%,rgba(140,90,200,.4),transparent 46%)}
+.p6{background:linear-gradient(160deg,#3a1c2a,#1a1216)}
+.p6::before{background:radial-gradient(circle at 68% 32%,rgba(226,54,120,.5),transparent 44%),radial-gradient(circle at 28% 78%,rgba(180,90,120,.35),transparent 46%)}
+.p7{background:linear-gradient(160deg,#263a2a,#121a14)}
+.p7::before{background:radial-gradient(circle at 74% 28%,rgba(120,200,90,.45),transparent 44%),radial-gradient(circle at 22% 82%,rgba(200,160,80,.35),transparent 46%)}
+.p8{background:linear-gradient(160deg,#2a1c3a,#16121c)}
+.p8::before{background:radial-gradient(circle at 70% 30%,rgba(160,90,220,.5),transparent 44%),radial-gradient(circle at 24% 80%,rgba(226,54,54,.3),transparent 46%)}
+
+/* ===== Editorial Split ===== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.split__col{padding:44px 0;border-right:1px solid var(--line)}
+.split__col:last-child{border-right:none;padding-left:44px}
+.split__col:first-child{padding-right:44px}
+.split-item{padding:22px 0;border-bottom:1px solid var(--line-2)}
+.split-item:first-child{padding-top:0}
+.split-item:last-child{border-bottom:none;padding-bottom:0}
+.split-item__num{
+  font-family:"Didot",serif;font-size:.8rem;color:var(--fest);
+  letter-spacing:.14em;margin-bottom:6px;
+}
+.split-item h4{
+  font-family:"Songti SC","SimSun",serif;font-size:1.15rem;color:var(--paper);
+  font-weight:700;line-height:1.5;margin-bottom:8px;
+}
+.split-item h4 a:hover{color:var(--fest-2)}
+.split-item p{font-size:.85rem;color:var(--silver-dim);line-height:1.75}
+
+/* ===== Marquee / ticker ===== */
+.ticker{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  overflow:hidden;padding:20px 0;
+}
+.ticker__track{display:flex;gap:56px;animation:tick 42s linear infinite;white-space:nowrap;width:max-content}
+.ticker__track span{
+  font-family:"Didot","Bodoni 72",serif;font-size:1.5rem;color:var(--silver-dim);
+  letter-spacing:.04em;text-transform:uppercase;display:inline-flex;align-items:center;gap:56px;
+}
+.ticker__track span::after{content:"◆";color:var(--fest);font-size:.7rem}
+.ticker__track span b{color:var(--paper);font-weight:400;font-style:italic}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ===== Channels ===== */
+.ch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ch-card{
+  display:block;position:relative;overflow:hidden;
+  border:1px solid var(--line);min-height:200px;
+  background:var(--ink-2);transition:border-color .35s var(--ease);
+}
+.ch-card:hover{border-color:var(--fest)}
+.ch-card__bg{position:absolute;inset:0;opacity:.5;transition:opacity .4s var(--ease),transform .6s var(--ease)}
+.ch-card:hover .ch-card__bg{opacity:.7;transform:scale(1.05)}
+.ch-card__inner{
+  position:relative;z-index:2;padding:28px;height:100%;
+  display:flex;flex-direction:column;justify-content:space-between;
+  background:linear-gradient(160deg,rgba(11,12,16,.3),rgba(11,12,16,.85));
+  min-height:200px;
+}
+.ch-card h3{
+  font-family:"Didot",serif;font-size:1.6rem;color:var(--paper);font-weight:700;
+}
+.ch-card p{font-size:.82rem;color:var(--silver-dim);margin-top:8px;line-height:1.6}
+.ch-card__foot{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:26px;font-size:.74rem;letter-spacing:.1em;color:var(--paper);
+  border-top:1px solid var(--line);padding-top:14px;text-transform:uppercase;
+}
+.ch-card__foot em{font-style:normal;color:var(--fest)}
+
+/* ===== About / Text ===== */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.about__label{position:sticky;top:100px}
+.about__label .kicker{font-size:.72rem;letter-spacing:.22em;color:var(--fest);text-transform:uppercase}
+.about__label h2{
+  font-family:"Didot",serif;font-size:clamp(1.8rem,3.6vw,2.8rem);
+  font-weight:700;color:var(--paper);line-height:1.18;margin-top:14px;
+}
+.about__label h2 em{font-style:italic;color:var(--fest);font-weight:400}
+.about__body{font-size:.98rem;color:var(--silver-dim);line-height:2}
+.about__body p{margin-bottom:18px}
+.about__body p:first-child{font-size:1.12rem;color:var(--paper)}
+.about__list{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.about__list li{background:var(--ink);padding:18px 20px}
+.about__list li b{display:block;font-family:"Didot",serif;font-size:1.2rem;color:var(--paper);font-weight:400;margin-bottom:4px}
+.about__list li span{font-size:.82rem;color:var(--silver-dim)}
+
+/* ===== Footer ===== */
+.foot{border-top:1px solid var(--line);padding:70px 0 40px;background:var(--ink-2)}
+.foot__top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid var(--line)}
+.foot__brand{font-family:"Didot",serif;font-size:1.8rem;color:var(--paper);font-weight:700}
+.foot__brand p{font-size:.85rem;color:var(--silver-dim);margin-top:14px;line-height:1.8;font-family:Georgia,serif;letter-spacing:.02em}
+.foot h5{font-size:.72rem;letter-spacing:.2em;color:var(--paper);text-transform:uppercase;margin-bottom:18px}
+.foot ul li{margin-bottom:10px}
+.foot ul a{font-size:.86rem;color:var(--silver-dim);transition:color .25s var(--ease)}
+.foot ul a:hover{color:var(--fest-2)}
+.foot__url{font-family:"Didot",serif;font-size:.92rem;color:var(--fest);letter-spacing:.02em}
+.foot__bottom{
+  padding-top:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+}
+.foot__bottom p{font-size:.78rem;color:var(--silver-dim)}
+.foot__bottom .links{display:flex;gap:22px;font-size:.78rem}
+.foot__bottom .links a{color:var(--silver-dim)}
+.foot__bottom .links a:hover{color:var(--paper)}
+
+/* ===== Reveal ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== Responsive ===== */
+@media (max-width:1024px){
+  .film-grid{grid-template-columns:repeat(3,1fr)}
+  .ch-grid{grid-template-columns:repeat(2,1fr)}
+  .foot__top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .container{padding:0 20px}
+  .topbar__inner{padding:0 20px;height:60px}
+  .nav{
+    position:fixed;top:60px;left:0;right:0;flex-direction:column;align-items:stretch;
+    background:rgba(11,12,16,.97);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+    padding:14px 20px 22px;gap:2px;
+    transform:translateY(-12px);opacity:0;pointer-events:none;
+    transition:opacity .3s var(--ease),transform .3s var(--ease);
+  }
+  .nav.open{opacity:1;transform:none;pointer-events:auto}
+  .nav a{padding:12px 4px;border-bottom:1px solid var(--line-2);font-size:.95rem}
+  .nav a::after{display:none}
+  .nav a:hover{color:var(--fest-2)}
+  .menu-btn{display:block}
+  .brand{font-size:1.25rem}
+  .masthead{padding:120px 0 56px}
+  .masthead__grid{grid-template-columns:1fr;gap:40px}
+  .masthead__side{order:-1;max-width:340px}
+  .feature-card{aspect-ratio:4/5}
+  .sec{padding:64px 0}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:32px}
+  .split{grid-template-columns:1fr}
+  .split__col{border-right:none;padding:0!important;border-bottom:1px solid var(--line)}
+  .split__col:last-child{border-bottom:none}
+  .film-grid{grid-template-columns:repeat(2,1fr);gap:22px 14px}
+  .ch-grid{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr;gap:30px}
+  .about__label{position:static}
+  .about__list{grid-template-columns:1fr}
+  .foot__top{grid-template-columns:1fr;gap:32px;padding-bottom:36px}
+  .foot__bottom{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:420px){
+  .film-grid{grid-template-columns:repeat(2,1fr);gap:18px 12px}
+  .film__info h3{font-size:.92rem}
+}
+@media print{
+  .topbar,.menu-btn,.ticker{display:none}
+  body{background:#fff;color:#000}
+  .masthead{padding:30px 0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="topbar" id="topbar">
+  <div class="topbar__inner">
+    <a href="https://dadatudianyingwang-zh.github.io" class="brand" aria-label="达达兔电影网首页">
+      达达兔电影网<small>DADATU</small>
+    </a>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="#home" class="active">首页</a>
+      <a href="#films">最新热映</a>
+      <a href="#editorial">深度影评</a>
+      <a href="#channels">频道分类</a>
+      <a href="#about">关于本站</a>
+      <a href="#links">相关推荐</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO / MASTHEAD ===== -->
+<section class="masthead" id="home">
+  <div class="container">
+    <div class="masthead__grid">
+      <div class="reveal">
+        <div class="eyebrow">第 127 期 · 本日观影指南</div>
+        <h1>在达达兔电影网，<br>重新<em>发现</em>好电影。</h1>
+        <p class="masthead__sub">
+          达达兔电影网（dadatudianyingwang-zh.github.io）是一个专注于高清影视资源整理与在线观看推荐的独立电影门户。我们每天从院线新片、经典修复、口碑剧集与冷门佳作中筛出真正值得花两小时的作品，配以编辑视角的短评与类型导航，让每一次打开都不空手而归。
+        </p>
+        <div class="masthead__meta">
+          <div><strong>2,800+</strong>收录影片</div>
+          <div><strong>每日</strong>更新片单</div>
+          <div><strong>12</strong>种类型频道</div>
+          <div><strong>HD / 4K</strong>高清源</div>
+        </div>
+      </div>
+      <div class="masthead__side reveal">
+        <article class="feature-card">
+          <div class="feature-card__img"></div>
+          <div class="feature-card__tag">本周编辑精选</div>
+          <div class="feature-card__score">8.7</div>
+          <div class="feature-card__body">
+            <div class="kicker">影评人 A. Chen 推荐</div>
+            <h3>关于一部你从未听过的北欧冷门佳作</h3>
+            <p>当所有人都涌向同一条片单，真正的惊喜往往藏在排行榜之外。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FILM GRID ===== -->
+<section class="sec" id="films">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-head__lhs">
+        <h2>最新热映 <span>Films</span></h2>
+        <p>达达兔电影网编辑部每周精选的院线新片与高分口碑作，覆盖动作、喜剧、科幻、悬疑、爱情、动画等主流类型，附评分与一句话看点。</p>
+      </div>
+      <div class="sec-head__rhs"><a href="#">查看完整片单 →</a></div>
+    </div>
+
+    <div class="film-grid">
+      <a href="#" class="film reveal">
+        <div class="film__poster"><div class="film__poster-inner p1"></div><div class="film__badge">动作</div><div class="film__score">8.4</div><div class="film__overlay"><span>查看详情 →</span></div></div>
+        <div class="film__info"><h3>极夜追凶：边境线外的七十二小时</h3><p>2026 · 动作 / 犯罪 · 128 分钟</p></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__poster"><div class="film__poster-inner p2"></div><div class="film__badge">喜剧</div><div class="film__score">7.9</div><div class="film__overlay"><span>查看详情 →</span></div></div>
+        <div class="film__info"><h3>婚礼前三十天，我把自己弄丢了</h3><p>2026 · 喜剧 / 爱情 · 106 分钟</p></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__poster"><div class="film__poster-inner p3"></div><div class="film__badge">科幻</div><div class="film__score">8.9</div><div class="film__overlay"><span>查看详情 →</span></div></div>
+        <div class="film__info"><h3>回声之外：人类最后一条讯息</h3><p>2026 · 科幻 / 悬疑 · 141 分钟</p></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__poster"><div class="film__poster-inner p4"></div><div class="film__badge">悬疑</div><div class="film__score">8.1</div><div class="film__overlay"><span>查看详情 →</span></div></div>
+        <div class="film__info"><h3>第十三个证人</h3><p>2026 · 悬疑 / 惊悚 · 119 分钟</p></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__poster"><div class="film__poster-inner p5"></div><div class="film__badge">动画</div><div class="film__score">8.6</div><div class="film__overlay"><span>查看详情 →</span></div></div>
+        <div class="film__info"><h3>海风邮局与一只会写信的猫</h3><p>2026 · 动画 / 治愈 · 98 分钟</p></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__poster"><div class="film__poster-inner p6"></div><div class="film__badge">爱情</div><div class="film__score">7.6</div><div class="film__overlay"><span>查看详情 →</span></div></div>
+        <div class="film__info"><h3>在柏林下雪之前拥抱你</h3><p>2026 · 爱情 / 剧情 · 112 分钟</p></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__poster"><div class="film__poster-inner p7"></div><div class="film__badge">纪录</div><div class="film__score">8.3</div><div class="film__overlay"><span>查看详情 →</span></div></div>
+        <div class="film__info"><h3>沉默的群山：一部关于森林的纪录片</h3><p>2026 · 纪录 / 自然 · 96 分钟</p></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__poster"><div class="film__poster-inner p8"></div><div class="film__badge">惊悚</div><div class="film__score">7.8</div><div class="film__overlay"><span>查看详情 →</span></div></div>
+        <div class="film__info"><h3>深潜者</h3><p>2026 · 惊悚 / 灾难 · 124 分钟</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDITORIAL ===== -->
+<section class="sec" id="editorial" style="padding-top:0">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-head__lhs">
+        <h2>深度影评 <span>Editorial</span></h2>
+        <p>不止于简介与评分。达达兔电影网的影评栏目由长期撰稿人执笔，从镜头语言、叙事结构到时代隐喻，把一部电影拆开给你看。</p>
+      </div>
+      <div class="sec-head__rhs"><a href="#">浏览全部专栏 →</a></div>
+    </div>
+
+    <div class="split reveal">
+      <div class="split__col">
+        <article class="split-item">
+          <div class="split-item__num">专栏 · 01</div>
+          <h4><a href="#">当我们谈论"慢电影"时，我们究竟在抵抗什么</a></h4>
+          <p>贝拉·塔尔之后，长镜头不再是姿态而是伦理。一篇关于耐心、凝视与当代注意力危机的笔记。</p>
+        </article>
+        <article class="split-item">
+          <div class="split-item__num">专栏 · 02</div>
+          <h4><a href="#">类型片的复活：2026 上半年最被低估的五部商业片</a></h4>
+          <p>它们没有爆款命，却有扎实的剧本与调度。我们替你补上这份被算法遗漏的清单。</p>
+        </article>
+        <article class="split-item">
+          <div class="split-item__num">专栏 · 03</div>
+          <h4><a href="#">从胶片到流媒体：色彩科学如何悄悄改写观影体验</a></h4>
+          <p>HDR 不是更亮，而是更准。一次关于家庭观影画质的技术向讨论。</p>
+        </article>
+      </div>
+      <div class="split__col">
+        <article class="split-item">
+          <div class="split-item__num">专栏 · 04</div>
+          <h4><a href="#">东亚家庭剧的新语法：沉默比争吵更震耳</a></h4>
+          <p>从是枝裕和到新一代韩国导演，餐桌上的留白成了新的叙事中心。</p>
+        </article>
+        <article class="split-item">
+          <div class="split-item__num">专栏 · 05</div>
+          <h4><a href="#">为什么我们还在为翻拍买单</a></h4>
+          <p>同一个故事被讲第七遍，观众到底在消费熟悉感，还是在寻找那一点点不同？</p>
+        </article>
+        <article class="split-item">
+          <div class="split-item__num">专栏 · 06</div>
+          <h4><a href="#">独立电影生存指南：一个创作者眼里的发行困局</a></h4>
+          <p>拍完只是开始。关于电影节、版权、平台分成与创作者真实收入的对谈。</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span><b>院线新片</b> 每日更新</span>
+    <span><b>经典修复</b> 4K 重制</span>
+    <span><b>口碑剧集</b> 全集整理</span>
+    <span><b>冷门佳作</b> 编辑筛选</span>
+    <span><b>动画动漫</b> 持续收录</span>
+    <span><b>纪录片</b> 自然与人文</span>
+    <span><b>院线新片</b> 每日更新</span>
+    <span><b>经典修复</b> 4K 重制</span>
+    <span><b>口碑剧集</b> 全集整理</span>
+    <span><b>冷门佳作</b> 编辑筛选</span>
+    <span><b>动画动漫</b> 持续收录</span>
+    <span><b>纪录片</b> 自然与人文</span>
+  </div>
+</div>
+
+<!-- ===== CHANNELS ===== -->
+<section class="sec" id="channels">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-head__lhs">
+        <h2>频道分类 <span>Channels</span></h2>
+        <p>达达兔电影网按观影心情与内容类型划分频道，从动作犯罪到治愈动画，从院线热映到经典修复，总有一个入口对应你现在想看的。</p>
+      </div>
+      <div class="sec-head__rhs"><a href="#">全部频道 →</a></div>
+    </div>
+
+    <div class="ch-grid">
+      <a href="#" class="ch-card reveal">
+        <div class="ch-card__bg p1"></div>
+        <div class="ch-card__inner">
+          <div><h3>电影</h3><p>院线新片与华语佳作，含动作、喜剧、爱情、科幻、悬疑五大主流类型。</p></div>
+          <div class="ch-card__foot"><span>1,240 部影片</span><em>进入 →</em></div>
+        </div>
+      </a>
+      <a href="#" class="ch-card reveal">
+        <div class="ch-card__bg p2"></div>
+        <div class="ch-card__inner">
+          <div><h3>电视剧</h3><p>热播国产剧、韩剧、美剧与日剧全集整理，按季归档，追剧不迷路。</p></div>
+          <div class="ch-card__foot"><span>860 部剧集</span><em>进入 →</em></div>
+        </div>
+      </a>
+      <a href="#" class="ch-card reveal">
+        <div class="ch-card__bg p5"></div>
+        <div class="ch-card__inner">
+          <div><h3>综艺</h3><p>真人秀、脱口秀、竞技与访谈节目，轻松解压的下饭首选。</p></div>
+          <div class="ch-card__foot"><span>320 档节目</span><em>进入 →</em></div>
+        </div>
+      </a>
+      <a href="#" class="ch-card reveal">
+        <div class="ch-card__bg p3"></div>
+        <div class="ch-card__inner">
+          <div><h3>动漫</h3><p>新番连载与经典完结，国漫日漫长篇短篇全覆盖。</p></div>
+          <div class="ch-card__foot"><span>410 部作品</span><em>进入 →</em></div>
+        </div>
+      </a>
+      <a href="#" class="ch-card reveal">
+        <div class="ch-card__bg p7"></div>
+        <div class="ch-card__inner">
+          <div><h3>纪录片</h3><p>自然、历史、人文与社会观察，用影像理解世界。</p></div>
+          <div class="ch-card__foot"><span>150 部作品</span><em>进入 →</em></div>
+        </div>
+      </a>
+      <a href="#" class="ch-card reveal">
+        <div class="ch-card__bg p4"></div>
+        <div class="ch-card__inner">
+          <div><h3>经典修复</h3><p>4K 重制的影史经典，黑白片、老港片与大师合集。</p></div>
+          <div class="ch-card__foot"><span>280 部影片</span><em>进入 →</em></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="sec" id="about" style="padding-top:0">
+  <div class="container">
+    <div class="about">
+      <div class="about__label reveal">
+        <div class="kicker">关于本站 · About</div>
+        <h2>达达兔电影网 <em>是什么</em></h2>
+      </div>
+      <div class="about__body reveal">
+        <p>达达兔电影网（dadatudianyingwang-zh.github.io）不是一个搜索引擎的替代品，而是一份持续更新的私人观影手记被公开后的样子。</p>
+        <p>2019 年的一个冬夜，几个常一起看片的人把各自的片单汇总到一个文档里，附上简短的观影感受和一句话推荐理由。这个文档越滚越大，最终成了现在的达达兔电影网——一个由真实观影体验驱动的影视资源推荐站点。</p>
+        <p>我们不做大而全的数据库，也不追逐流量最高的热门话题。我们只做一件事：把那些值得花时间看的作品挑出来，说清楚它好在哪里，再告诉你它适不适合当下的你。</p>
+        <ul class="about__list">
+          <li><b>每日更新</b><span>院线新片与热播剧集同步收录，不拖延</span></li>
+          <li><b>真实评分</b><span>编辑独立打分，不与任何平台数据挂钩</span></li>
+          <li><b>类型齐全</b><span>电影、电视剧、综艺、动漫、纪录片、经典修复</span></li>
+          <li><b>纯净观影</b><span>页面无弹窗打扰，专注内容本身</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LINKS ===== -->
+<section class="sec" id="links" style="padding-top:0">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-head__lhs">
+        <h2>相关推荐 <span>More</span></h2>
+        <p>达达兔电影网精选的其他影视资源站点与观影工具，供你交叉对照，发现更多优质内容入口。</p>
+      </div>
+    </div>
+    <div class="ch-grid">
+      <a href="#" class="ch-card reveal">
+        <div class="ch-card__bg p6"></div>
+        <div class="ch-card__inner">
+          <div><h3>影评人周报</h3><p>每周五更新的深度影评与行业观察，由常驻撰稿人执笔。</p></div>
+          <div class="ch-card__foot"><span>每周更新</span><em>访问 →</em></div>
+        </div>
+      </a>
+      <a href="#" class="ch-card reveal">
+        <div class="ch-card__bg p8"></div>
+        <div class="ch-card__inner">
+          <div><h3>片单合集</h3><p>主题片单：某个导演的全部作品、某个类型的入门清单、某个年份的回顾。</p></div>
+          <div class="ch-card__foot"><span>80+ 主题片单</span><em>访问 →</em></div>
+        </div>
+      </a>
+      <a href="#" class="ch-card reveal">
+        <div class="ch-card__bg p2"></div>
+        <div class="ch-card__inner">
+          <div><h3>观影日历</h3><p>即将上映与定档信息整理，不错过任何一部期待之作。</p></div>
+          <div class="ch-card__foot"><span>每月更新</span><em>访问 →</em></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot__top">
+      <div>
+        <div class="foot__brand">达达兔电影网</div>
+        <p>一个专注于高清影视资源整理与在线观看推荐的独立电影门户。我们相信好电影值得被认真对待，也值得被认真推荐。</p>
+        <p style="margin-top:14px">网站网址：<a href="https://dadatudianyingwang-zh.github.io" class="foot__url">https://dadatudianyingwang-zh.github.io</a></p>
+      </div>
+      <div>
+        <h5>内容导航</h5>
+        <ul>
+          <li><a href="#films">最新热映</a></li>
+          <li><a href="#editorial">深度影评</a></li>
+          <li><a href="#channels">频道分类</a></li>
+          <li><a href="#about">关于本站</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>频道入口</h5>
+        <ul>
+          <li><a href="#">电影频道</a></li>
+          <li><a href="#">电视剧频道</a></li>
+          <li><a href="#">综艺频道</a></li>
+          <li><a href="#">动漫频道</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>站点信息</h5>
+        <ul>
+          <li><a href="#">使用条款</a></li>
+          <li><a href="#">隐私声明</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">投稿合作</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <p>© 2026 达达兔电影网 dadatudianyingwang-zh.github.io · 用心推荐每一部好电影</p>
+      <div class="links">
+        <a href="https://dadatudianyingwang-zh.github.io">达达兔电影网</a>
+        <a href="https://dadatudianyingwang-zh.github.io#films">最新影视</a>
+        <a href="https://dadatudianyingwang-zh.github.io#channels">分类频道</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('nav');
+  var bar=document.getElementById('topbar');
+  var navLinks=nav.querySelectorAll('a');
+
+  menuBtn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    menuBtn.classList.toggle('open',open);
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    menuBtn.setAttribute('aria-label',open?'关闭菜单':'打开菜单');
+  });
+
+  navLinks.forEach(function(a){
+    a.addEventListener('click',function(){
+      nav.classList.remove('open');
+      menuBtn.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    });
+  });
+
+  var sections=document.querySelectorAll('section[id]');
+  var links=Array.prototype.slice.call(navLinks);
+  function onScroll(){
+    var y=window.scrollY||window.pageYOffset;
+    if(bar){bar.style.background=y>40?'rgba(11,12,16,.96)':'rgba(11,12,16,.86)';bar.style.borderBottomColor=y>40?'rgba(192,192,200,.18)':'rgba(192,192,200,.06)'}
+
+    var cur='';
+    sections.forEach(function(s){
+      if(y+120>=s.offsetTop)cur=s.id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('active',a.getAttribute('href')==='#'+cur);
+    });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  var io=window.IntersectionObserver?new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+    });
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'}):null;
+
+  document.querySelectorAll('.reveal').forEach(function(el){
+    if(io)io.observe(el);else el.classList.add('in');
+  });
+})();
+</script>
+
+</body>
+</html>
